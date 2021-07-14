@@ -81,7 +81,8 @@ class SplashScreenState extends State<MyHomePage> {
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return HomePage();
-    // AuthService().handleAuth();
+    return
+        // HomePage();
+        AuthService().handleAuth();
   }
 }
