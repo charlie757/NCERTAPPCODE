@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "625531120074",
+    "project_id": "ncert-new",
+    "storage_bucket": "ncert-new.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625531120074:android:b42c5b1920f601e6de4733",
+        "android_client_info": {
+          "package_name": "com.example.ncertapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "625531120074-5t15hnalsk52k31a4sj31qnp05goei35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgTh8Qw3Df-M8RzYB7VzllP4WqL_St4is"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "625531120074-5t15hnalsk52k31a4sj31qnp05goei35.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
