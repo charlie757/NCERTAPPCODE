@@ -34,16 +34,16 @@ class PDFApi {
 //     return File(result.paths.first);
   // }
 
-  // static Future<File> loadFirebase(String url) async {
-  //   try {
-  //     final refPDF = FirebaseStorage.instance.ref().child(url);
-  //     final bytes = await refPDF.getData();
+  static Future<File> loadFirebase(String url) async {
+    try {
+      final refPDF = FirebaseStorage.instance.ref().child(url);
+      final bytes = await refPDF.getData();
 
-  //     return _storeFile(url, bytes);
-  //   } catch (e) {
-  //     return null;
-  //   }
-  // }
+      return _storeFile(url, bytes);
+    } catch (e) {
+      return null;
+    }
+  }
 
   static Future<File> _storeFile(String url, List<int> bytes) async {
     final filename = basename(url);

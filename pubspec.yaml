@@ -24,11 +24,8 @@ dependencies:
   flutter:
     sdk: flutter
 
-  #  Use for Theme
+  #  for Theme
   provider:
-  
-  # load the pDF
-
 
 #  authentication for login
   firebase_auth:
@@ -46,8 +43,9 @@ dependencies:
   firebase_storage: ^7.0.0
 
   # rxdart:
-  splashscreen: ^1.3.5
-  flutter_colorpicker: ^0.5.0
+  # splashscreen: ^1.3.5
+  # flutter_colorpicker: ^0.5.0
+  # velocity_x: ^3.3.0
     
 
   # The following adds the Cupertino Icons font to your application.

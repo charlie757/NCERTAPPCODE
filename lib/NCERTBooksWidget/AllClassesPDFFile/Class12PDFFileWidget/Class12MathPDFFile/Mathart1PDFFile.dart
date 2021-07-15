@@ -71,7 +71,11 @@ class _MathPart1PDFFileState extends State<MathPart1PDFFile> {
                     SizedBox(
                       width: 10,
                     ),
-                    offline(width, context)
+                    offline(width, context),
+                    
+                    SizedBox(
+                      width: 10,),
+                      firebase(width, context)
                   ],
                 )
               ],
@@ -109,6 +113,26 @@ class _MathPart1PDFFileState extends State<MathPart1PDFFile> {
         height: 20,
         color: Colors.orange,
         child: Text("Online"),
+      ),
+    ));
+  }
+  Expanded firebase(double width, BuildContext context) {
+    return Expanded(
+        child: InkWell(
+      onTap: () async {
+         
+                    final url = 'Core-Java.pdf';
+                    final file = await PDFApi.loadFirebase(url);
+
+                    if (file == null) return;
+                    openPDF(context, file);
+                
+      },
+      child: Container(
+        alignment: Alignment.center,
+        height: 20,
+        color: Colors.orange,
+        child: Text("Firebase"),
       ),
     ));
   }

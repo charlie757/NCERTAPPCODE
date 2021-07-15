@@ -12,13 +12,14 @@ class Chapter1 extends StatefulWidget {
   _Chapter1State createState() => _Chapter1State();
 }
 
+// Only For Testing and we have add this page on colorchange in drawer 
 class _Chapter1State extends State<Chapter1> {
   @override
   Widget build(BuildContext context) => Scaffold(
         body: Center(
           child: Padding(
             padding: EdgeInsets.all(32),
-            child: Row(
+            child: Column(
               // mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Expanded(
@@ -51,17 +52,17 @@ class _Chapter1State extends State<Chapter1> {
                     openPDF(context, file);
                   },
                 )),
-                // const SizedBox(height: 16),
-                // ButtonWidget(
-                //   text: 'Firebase PDF',
-                //   onClicked: () async {
-                //     final url = 'sample.pdf';
-                //     final file = await PDFApi.loadFirebase(url);
+                const SizedBox(height: 16),
+                ButtonWidget(
+                  text: 'Firebase PDF',
+                  onClicked: () async {
+                    final url = 'Core-Java.pdf';
+                    final file = await PDFApi.loadFirebase(url);
 
-                //     if (file == null) return;
-                //     openPDF(context, file);
-                //   },
-                // ),
+                    if (file == null) return;
+                    openPDF(context, file);
+                  },
+                ),
               ],
             ),
           ),

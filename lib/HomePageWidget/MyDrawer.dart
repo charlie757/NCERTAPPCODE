@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:ncertapp/Authenication/authservice.dart';
+import 'package:ncertapp/LoadPDFFileWidget/Chapter1PDF.dart';
 import 'package:ncertapp/WebViewWidget/WebView.dart';
 import 'package:provider/provider.dart';
 
@@ -44,9 +45,15 @@ class MyDrawer extends StatelessWidget {
                   onDetailsPressed: () {},
                 ),
                 Text("Setting"),
-                ListTile(
-                  title: Text("Change Color"),
-                  leading: Icon(Icons.color_lens),
+                InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Chapter1()));
+                  },
+                  child: ListTile(
+                    title: Text("Change Color"),
+                    leading: Icon(Icons.color_lens),
+                  ),
                 ),
                 ListTile(
                   title: Text("Open the books from Inbuid reader"),
@@ -128,7 +135,7 @@ class MyDrawer extends StatelessWidget {
                 ),
                 InkWell(
                     onTap: () {
-                      AuthService().signOut();
+                      // AuthService().signOut();
                     },
                     child: ListTile(
                       title: Text("LogOut"),
