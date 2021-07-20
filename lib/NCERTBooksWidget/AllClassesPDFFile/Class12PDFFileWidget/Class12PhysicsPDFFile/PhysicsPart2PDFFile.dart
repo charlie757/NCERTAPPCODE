@@ -57,7 +57,7 @@ class _PhysicsPart2PDFFileState extends State<PhysicsPart2PDFFile> {
                     Expanded(
                         child: Text(
                       name,
-                      style: TextStyle(fontSize: 16),
+                      style: TextStyle(fontSize: 14),
                     )),
                   ],
                 ),

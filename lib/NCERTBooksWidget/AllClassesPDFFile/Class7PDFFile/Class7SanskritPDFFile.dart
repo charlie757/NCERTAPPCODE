@@ -21,12 +21,24 @@ class _Class7SanskritPDFFileState extends State<Class7SanskritPDFFile> {
 
       body: ListView(
         children: [
-          container(width, context, 'Chapter-1', 'name'),
-          container(width, context, 'Chapter-2', 'name'),
-          container(width, context, 'Chapter-3', 'name'),
-          container(width, context, 'Chapter-4', 'name'),
-          container(width, context, 'Chapter-5', 'name'),
-          container(width, context, 'Chapter-6', 'name')
+          container(width, context, 'Chapter-1', 'सुभाषितानी'),
+          container(width, context, 'Chapter-2', 'दुर्बुद्धि विनश्यति'),
+          container(width, context, 'Chapter-3', 'स्वावलम्बनम'),
+          container(width, context, 'Chapter-4', 'हास्यबालकविसम्मेलनम'),
+          container(width, context, 'Chapter-5', 'पण्डिता रमाबाई'),
+          container(width, context, 'Chapter-6', 'सदाचार'),
+          container(
+              width, context, 'Chapter-7', 'संकल्प सिद्धिदायक (धातुप्रयोग )'),
+          container(width, context, 'Chapter-8', 'त्रिवर्ण ध्वज'),
+          container(width, context, 'Chapter-9', 'विमानायं रचयाम'),
+          container(width, context, 'Chapter-10',
+              'विश्वबंदुत्वं (करक विभक्ति उपवद विभक्तिश्च)'),
+          container(width, context, 'Chapter-11', 'समवाये ही दुर्जय'),
+          container(width, context, 'Chapter-12', 'कल्पलतेव विद्या'),
+          container(width, context, 'Chapter-13',
+              'अमृतं संस्कृतं ( इकारांत स्त्रीलिंग )'),
+          container(width, context, 'Chapter-14', 'अनारिकाया जिज्ञासा'),
+          container(width, context, 'Chapter-15', 'लालनगीतम'),
         ],
       ),
     );

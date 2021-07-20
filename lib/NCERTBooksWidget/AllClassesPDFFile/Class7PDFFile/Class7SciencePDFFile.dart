@@ -21,84 +21,91 @@ class _Class7SciencePDFFileState extends State<Class7SciencePDFFile> {
 
       body: ListView(
         children: [
-          container(width, context, 'Lession-1', 'name'),
-          container(width, context, 'Lession-2', 'name'),
-          container(width, context, 'Lession-3', 'name'),
-          container(width, context, 'Lession-4', 'name'),
-          container(width, context, 'Lession-5', 'name'),
-          container(width, context, 'Lession-6', 'name')
+          container(width, context, 'Chapter-1', 'Nutrition in Plants'),
+          container(width, context, 'Chapter-2', 'Nutrition in Animals'),
+          container(width, context, 'Chapter-3', 'Fibre to Fabric'),
+          container(width, context, 'Chapter-4', 'Heat'),
+          container(width, context, 'Chapter-5', 'Acids, Bases and Salts'),
+          container(
+              width, context, 'Chapter-6', 'Physical and Chemical Changes'),
+          container(width, context, 'Chapter-7',
+              'Weather, Climate and Adaptations of Animals to Climate'),
+          container(width, context, 'Chapter-8', 'Winds, Storms and Cyclones'),
+          container(width, context, 'Chapter-9', 'Soil'),
+          container(width, context, 'Chapter-10', 'Respiration in Organisms'),
+          container(width, context, 'Chapter-11',
+              'Transportation in Animals and Plants'),
+          container(width, context, 'Chapter-12', 'Reproduction in Plants'),
+          container(width, context, 'Chapter-13', 'Motion and Time'),
+          container(width, context, 'Chapter-14',
+              'Electric Current and its 14 Effects'),
+          container(width, context, 'Chapter-15', 'Light'),
+          container(width, context, 'Chapter-16', 'Water: A Precious Resource'),
+          container(width, context, 'Chapter-17', 'Forests: Our Lifeline'),
+          container(width, context, 'Chapter-18', 'Wastewater Story'),
         ],
       ),
     );
   }
 
-  Container container(width, BuildContext context, String number, String name) {
-    return Container(
-        height: 90,
-        child: Card(
-            shadowColor: Colors.cyan,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Row(
-                  children: [
-                    Text(
-                      number,
-                      style: TextStyle(fontSize: 16),
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Expanded(
-                        child: Text(
-                      name,
-                      style: TextStyle(fontSize: 16),
-                    )),
-                  ],
-                ),
-                Row(
+  InkWell container(width, BuildContext context, String number, String name) {
+    return InkWell(
+        child: Container(
+            height: 90,
+            child: Card(
+                shadowColor: Colors.cyan,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    online(width, context, HomePage()),
-                    SizedBox(
-                      width: 10,
+                    Row(
+                      children: [
+                        Text(
+                          number,
+                          style: TextStyle(fontSize: 16),
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Expanded(
+                            child: Text(
+                          name,
+                          style: TextStyle(fontSize: 16),
+                        )),
+                      ],
                     ),
-                    offline(width, context, HomePage())
                   ],
-                )
-              ],
-            )));
+                ))));
   }
 
-  Expanded offline(double width, BuildContext context, route) {
-    return Expanded(
-        child: InkWell(
-      onTap: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) => route));
-      },
-      child: Container(
-        alignment: Alignment.center,
-        height: 20,
-        color: Colors.purple,
-        child: Text("Offline"),
-      ),
-    ));
-  }
+  // Expanded offline(double width, BuildContext context, route) {
+  //   return Expanded(
+  //       child: InkWell(
+  //     onTap: () {
+  //       Navigator.push(context, MaterialPageRoute(builder: (context) => route));
+  //     },
+  //     child: Container(
+  //       alignment: Alignment.center,
+  //       height: 20,
+  //       color: Colors.purple,
+  //       child: Text("Offline"),
+  //     ),
+  //   ));
+  // }
 
-  Expanded online(double width, BuildContext context, route1) {
-    return Expanded(
-        child: InkWell(
-      onTap: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => route1));
-      },
-      child: Container(
-        alignment: Alignment.center,
-        height: 20,
-        color: Colors.orange,
-        child: Text("Online"),
-      ),
-    ));
-  }
+  // Expanded online(double width, BuildContext context, route1) {
+  //   return Expanded(
+  //       child: InkWell(
+  //     onTap: () {
+  //       Navigator.push(
+  //           context, MaterialPageRoute(builder: (context) => route1));
+  //     },
+  //     child: Container(
+  //       alignment: Alignment.center,
+  //       height: 20,
+  //       color: Colors.orange,
+  //       child: Text("Online"),
+  //     ),
+  //   ));
+  // }
 }

@@ -21,12 +21,25 @@ class _Class7EnglishPDFFileState extends State<Class7EnglishPDFFile> {
 
       body: ListView(
         children: [
-          container(width, context, 'Lession-1', 'name'),
-          container(width, context, 'Lession-2', 'name'),
-          container(width, context, 'Lession-3', 'name'),
-          container(width, context, 'Lession-4', 'name'),
-          container(width, context, 'Lession-5', 'name'),
-          container(width, context, 'Lession-6', 'name')
+          container(width, context, 'Introduction', ''),
+          container(
+              width, context, 'Chapter-1', 'Three Questions & The Squirrel'),
+          container(
+              width, context, 'Chapter-2', 'A Gift of Chappals & The Rebel'),
+          container(width, context, 'Chapter-3',
+              'Gopal and the Hilsa Fish & The Shed'),
+          container(width, context, 'Chapter-4',
+              'The Ashes That Made Trees Bloom & Chivvy'),
+          container(width, context, 'Chapter-5', 'Quality & Trees'),
+          container(width, context, 'Chapter-6',
+              'Expert Detectives & Mystery of the Talking Fan'),
+          container(width, context, 'Chapter-7',
+              'The Invention of Vita-Wonk & Dad and the Cat and the Tree'),
+          container(width, context, 'Chapter-8',
+              'Fire: Friend and Foe & Meadow Surprises'),
+          container(width, context, 'Chapter-9',
+              'A Bicycle in Good Repair & Garden Snake'),
+          container(width, context, 'Chapter-10', 'The Story of Cricket'),
         ],
       ),
     );

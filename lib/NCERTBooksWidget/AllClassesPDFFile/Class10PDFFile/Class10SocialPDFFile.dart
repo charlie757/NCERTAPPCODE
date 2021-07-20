@@ -16,89 +16,55 @@ class _Class10SocialPDFFileState extends State<Class10SocialPDFFile> {
       appBar: AppBar(
         title: Text("Social Science"),
       ),
-
-      //Show the PDF File by this class and we can add more chatper from here.
-
       body: ListView(
         children: [
-          container(width, context, 'Lession-1', 'name'),
-          container(width, context, 'Lession-2', 'name'),
-          container(width, context, 'Lession-3', 'name'),
-          container(width, context, 'Lession-4', 'name'),
-          container(width, context, 'Lession-5', 'name'),
-          container(width, context, 'Lession-6', 'name')
+          Container(
+            height: 50,
+            color: Colors.cyan,
+            alignment: Alignment.center,
+            child: Text("Political Science (Democratic Politics -II)"),
+          ),
+          container(width, context, 'Chapter-1', 'Power Sharing'),
+          container(width, context, 'Chapter-2', 'Federalism'),
+          container(width, context, 'Chapter-3', 'Democracy and Diversity'),
+          container(width, context, 'Chapter-4', 'Gender, Religion and Caste'),
+          container(
+              width, context, 'Chapter-5', 'Popular Struggles and Movements'),
+          container(width, context, 'Chapter-6', 'Political Parties'),
+          container(width, context, 'Chapter-7', 'Outcomes of Democracy'),
+          container(width, context, 'Chapter-8', 'Challenges to Democracy'),
         ],
       ),
     );
   }
 
-  Container container(width, BuildContext context, String number, String name) {
-    return Container(
-        height: 90,
-        child: Card(
-            shadowColor: Colors.cyan,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Row(
-                  children: [
-                    Text(
-                      number,
-                      style: TextStyle(fontSize: 16),
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Expanded(
-                        child: Text(
-                      name,
-                      style: TextStyle(fontSize: 16),
-                    )),
-                  ],
-                ),
-                Row(
+  InkWell container(width, BuildContext context, String number, String name) {
+    return InkWell(
+        child: Container(
+            height: 80,
+            child: Card(
+                shadowColor: Colors.cyan,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    online(width, context, HomePage()),
-                    SizedBox(
-                      width: 10,
+                    Row(
+                      children: [
+                        Text(
+                          number,
+                          style: TextStyle(fontSize: 16),
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Expanded(
+                            child: Text(
+                          name,
+                          style: TextStyle(fontSize: 16),
+                        )),
+                      ],
                     ),
-                    offline(width, context, HomePage())
                   ],
-                )
-              ],
-            )));
-  }
-
-  Expanded offline(double width, BuildContext context, route) {
-    return Expanded(
-        child: InkWell(
-      onTap: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) => route));
-      },
-      child: Container(
-        alignment: Alignment.center,
-        height: 20,
-        color: Colors.purple,
-        child: Text("Offline"),
-      ),
-    ));
-  }
-
-  Expanded online(double width, BuildContext context, route1) {
-    return Expanded(
-        child: InkWell(
-      onTap: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => route1));
-      },
-      child: Container(
-        alignment: Alignment.center,
-        height: 20,
-        color: Colors.orange,
-        child: Text("Online"),
-      ),
-    ));
+                ))));
   }
 }

@@ -21,12 +21,21 @@ class _Class4HindiPDFFileState extends State<Class4HindiPDFFile> {
 
       body: ListView(
         children: [
-          container(width, context, 'Lession-1', 'name'),
-          container(width, context, 'Lession-2', 'name'),
-          container(width, context, 'Lession-3', 'name'),
-          container(width, context, 'Lession-4', 'name'),
-          container(width, context, 'Lession-5', 'name'),
-          container(width, context, 'Lession-6', 'name')
+          container(width, context, 'Introduction', ''),
+          container(width, context, 'Chapter-1', 'मन के भोले-भाले बादल'),
+          container(width, context, 'Chapter-2', 'जैसा सवाल वैसा जवाब '),
+          container(width, context, 'Chapter-3', 'किरमिच की गेंद'),
+          container(width, context, 'Chapter-4', 'पापा जब बच्चे थे'),
+          container(width, context, 'Chapter-5', 'दोस्त की पोशाक'),
+          container(width, context, 'Chapter-6', 'नाव बनाओ नाव बनाओ'),
+          container(width, context, 'Chapter-7', 'दान का हिसाब'),
+          container(width, context, 'Chapter-8', 'कौन?'),
+          container(width, context, 'Chapter-9', 'स्वतंत्रता की ओर'),
+          container(width, context, 'Chapter-10', 'थप्प रोटी थप्प दाल'),
+          container(width, context, 'Chapter-11', 'पढ़क्‍कू की सूझ'),
+          container(width, context, 'Chapter-12', 'सुनीता की पहिया कुर्सी'),
+          container(width, context, 'Chapter-13', 'हुदहुद'),
+          container(width, context, 'Chapter-14', 'मुफ्त ही मुफ्त'),
         ],
       ),
     );

@@ -3,8 +3,7 @@ import 'package:ncertapp/HomePageWidget/HomePage.dart';
 import 'package:ncertapp/NCERTBooksWidget/AllClassesPDFFile/Class5PDFFile/Class5EnglishPDFFile.dart';
 import 'package:ncertapp/NCERTBooksWidget/AllClassesPDFFile/Class5PDFFile/Class5HindiPDFFIle.dart';
 import 'package:ncertapp/NCERTBooksWidget/AllClassesPDFFile/Class5PDFFile/Class5MathPDFFile.dart';
-import 'package:ncertapp/NCERTBooksWidget/AllClassesPDFFile/Class5PDFFile/Class5SciencePDFFile.dart';
-import 'package:ncertapp/NCERTBooksWidget/AllClassesPDFFile/Class5PDFFile/Class5SocialPDFFile.dart';
+import 'package:ncertapp/NCERTBooksWidget/AllClassesPDFFile/Class5PDFFile/Class5EVSPDFFile.dart';
 
 class Class5Books extends StatefulWidget {
   const Class5Books({Key key}) : super(key: key);
@@ -28,13 +27,11 @@ class _Class5BooksState extends State<Class5Books> {
           inkWell(width, context, 'Math', 'assets/images/math.png',
               Class5MathPDFFile()),
           inkWell(width, context, 'Science', 'assets/images/science3.jpg',
-              Class5SciencePDFFile()),
+              Class5EVSPDFFile()),
           inkWell(width, context, 'English', 'assets/images/english.png',
               Class5EnglishPDFFile()),
           inkWell(width, context, 'Hindi', 'assets/images/hindi.jpg',
               Class5HindiPDFFile()),
-          inkWell(width, context, 'Social Science', 'assets/images/world.jpg',
-              Class5SocialPDFFile()),
         ],
       ),
     );

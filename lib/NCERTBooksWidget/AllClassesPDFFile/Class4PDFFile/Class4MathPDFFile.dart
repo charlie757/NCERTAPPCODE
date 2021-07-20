@@ -21,12 +21,21 @@ class _Class4MathPDFFileState extends State<Class4MathPDFFile> {
 
       body: ListView(
         children: [
-          container(width, context, 'Chapter-1', 'name'),
-          container(width, context, 'Chapter-2', 'name'),
-          container(width, context, 'Chapter-3', 'name'),
-          container(width, context, 'Chapter-4', 'name'),
-          container(width, context, 'Chapter-5', 'name'),
-          container(width, context, 'Chapter-6', 'name')
+          container(width, context, 'Introduction', ''),
+          container(width, context, 'Chapter-1', 'Building with Bricks'),
+          container(width, context, 'Chapter-2', 'Long and Short'),
+          container(width, context, 'Chapter-3', 'A Trip to Bhopal'),
+          container(width, context, 'Chapter-4', 'Tick-Tick-Tick'),
+          container(width, context, 'Chapter-5', 'The Way The World Looks'),
+          container(width, context, 'Chapter-6', 'The Junk Seller'),
+          container(width, context, 'Chapter-7', 'Jugs and Mugs'),
+          container(width, context, 'Chapter-8', 'Carts and Wheels'),
+          container(width, context, 'Chapter-9', 'Halves and Quarters'),
+          container(width, context, 'Chapter-10', 'Play with Patterns'),
+          container(width, context, 'Chapter-11', 'Tables and Shares'),
+          container(width, context, 'Chapter-12', 'How Heavy? How Light?'),
+          container(width, context, 'Chapter-13', 'Fields and Fences'),
+          container(width, context, 'Chapter-14', 'Smart Charts')
         ],
       ),
     );

@@ -18,13 +18,21 @@ class _BusinessPDFFileState extends State<BusinessPDFFile> {
       ),
       body: ListView(
         children: [
-          container(width, context, 'Lesson-1', ' name'),
-          container(width, context, 'Lesson-2', ' name'),
-          container(width, context, 'Lesson-3', ' name'),
-          container(width, context, 'Lesson-4', ' name'),
-          container(width, context, 'Lesson-5', ' name'),
-          container(width, context, 'Lesson-6', ' name')
-        ],
+          container(width, context, 'Chapter-1', 'Nature and Significance of Management'),
+          container(width, context, 'Chapter-2', 'Principles of Management'),
+          container(width, context, 'Chapter-3', 'Business Environment'),
+          container(width, context, 'Chapter-4', 'Planning'),
+          container(width, context, 'Chapter-5', 'Organising'),
+          container(width, context, 'Chapter-6', 'Staffing'),
+          container(width, context, 'Chapter-7', 'Directing'),
+          container(width, context, 'Chapter-8', 'Controlling'),
+          container(width, context, 'Chapter-9', 'Financial Management'),
+          container(width, context, 'Chapter-10', 'Financial Markets'),
+          container(width, context, 'Chapter-11', 'Marketing'),
+          container(width, context, 'Chapter-12', 'Consumer Protection'),
+          container(width, context, 'Chapter-13', 'Entrepreneurship Development'),
+          
+          ],
       ),
     );
   }
@@ -61,14 +69,14 @@ class _BusinessPDFFileState extends State<BusinessPDFFile> {
                     SizedBox(
                       width: 10,
                     ),
-                    offline(width, context, HomePage())
+                    download(width, context, HomePage())
                   ],
                 )
               ],
             )));
   }
 
-  Expanded offline(double width, BuildContext context, route) {
+  Expanded download(double width, BuildContext context, route) {
     return Expanded(
         child: InkWell(
       onTap: () {
@@ -78,7 +86,7 @@ class _BusinessPDFFileState extends State<BusinessPDFFile> {
         alignment: Alignment.center,
         height: 20,
         color: Colors.purple,
-        child: Text("Offline"),
+        child: Text("download"),
       ),
     ));
   }

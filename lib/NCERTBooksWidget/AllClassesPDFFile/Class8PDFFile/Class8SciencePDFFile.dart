@@ -16,17 +16,35 @@ class _Class8SciencePDFFileState extends State<Class8SciencePDFFile> {
       appBar: AppBar(
         title: Text("Science"),
       ),
-
-      //Show the PDF File by this class and we can add more chatper from here.
-
       body: ListView(
         children: [
-          container(width, context, 'Lession-1', 'name'),
-          container(width, context, 'Lession-2', 'name'),
-          container(width, context, 'Lession-3', 'name'),
-          container(width, context, 'Lession-4', 'name'),
-          container(width, context, 'Lession-5', 'name'),
-          container(width, context, 'Lession-6', 'name')
+          container(width, context, 'Introduction', ''),
+          container(
+              width, context, 'Chapter-1', 'Crop Production and Management'),
+          container(
+              width, context, 'Chapter-2', 'Microorganisms: Friend and Foe'),
+          container(
+              width, context, 'Chapter-3', 'Synthetic Fibres and Plastics'),
+          container(
+              width, context, 'Chapter-4', 'Materials: Metals and Non-Metals'),
+          container(width, context, 'Chapter-5', 'Coal and Petroleum'),
+          container(width, context, 'Chapter-6', 'Combustion and Flame'),
+          container(width, context, 'Chapter-7',
+              'Conservation of Plants and Animals'),
+          container(
+              width, context, 'Chapter-8', 'Cell – Structure and Functions'),
+          container(width, context, 'Chapter-9', 'Reproduction in Animals'),
+          container(
+              width, context, 'Chapter-10', 'Reaching the Age of Adolescence'),
+          container(width, context, 'Chapter-11', 'Force and Pressure'),
+          container(width, context, 'Chapter-12', 'Friction'),
+          container(width, context, 'Chapter-13', 'Sound'),
+          container(width, context, 'Chapter-14',
+              'Chemical Effects of Electric Current'),
+          container(width, context, 'Chapter-15', 'Some Natural Phenomena'),
+          container(width, context, 'Chapter-16', 'Light'),
+          container(width, context, 'Chapter-17', 'Stars and The Solar System'),
+          container(width, context, 'Chapter-18', 'Pollution of Air and Water')
         ],
       ),
     );

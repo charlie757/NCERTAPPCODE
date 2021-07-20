@@ -21,12 +21,19 @@ class _Class6SSocialPDFFileState extends State<Class6SocialPDFFile> {
 
       body: ListView(
         children: [
-          container(width, context, 'Lession-1', 'name'),
-          container(width, context, 'Lession-2', 'name'),
-          container(width, context, 'Lession-3', 'name'),
-          container(width, context, 'Lession-4', 'name'),
-          container(width, context, 'Lession-5', 'name'),
-          container(width, context, 'Lession-6', 'name')
+          container(width, context, 'Introduction', ''),
+          container(
+              width, context, 'Chapter-1', 'The Earth in the Solar System'),
+          container(
+              width, context, 'Chapter-2', 'Globe: Latitudes and Longitudes'),
+          container(width, context, 'Chapter-3', 'Motions of the Earth'),
+          container(width, context, 'Chapter-4', 'Maps'),
+          container(width, context, 'Chapter-5', 'Major Domains of the Earth'),
+          container(
+              width, context, 'Chapter-6', 'Major Landforms of the Earth'),
+          container(width, context, 'Chapter-7', 'Our Country – India'),
+          container(width, context, 'Chapter-8',
+              'India: Climate, Vegetation and Wildlife'),
         ],
       ),
     );

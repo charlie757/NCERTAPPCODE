@@ -21,84 +21,86 @@ class _Class7MathPDFFileState extends State<Class7MathPDFFile> {
 
       body: ListView(
         children: [
-          container(width, context, 'Chapter-1', 'name'),
-          container(width, context, 'Chapter-2', 'name'),
-          container(width, context, 'Chapter-3', 'name'),
-          container(width, context, 'Chapter-4', 'name'),
-          container(width, context, 'Chapter-5', 'name'),
-          container(width, context, 'Chapter-6', 'name')
+          container(width, context, 'Introduction', ''),
+          container(width, context, 'Chapter-1', 'Integers'),
+          container(width, context, 'Chapter-2', 'Fractions and Decimals'),
+          container(width, context, 'Chapter-3', 'Data Handling'),
+          container(width, context, 'Chapter-4', 'Simple Equations'),
+          container(width, context, 'Chapter-5', 'Lines and Angles'),
+          container(
+              width, context, 'Chapter-6', 'The Triangle and Its Properties'),
+          container(width, context, 'Chapter-7', 'Congruence of Triangles'),
+          container(width, context, 'Chapter-8', 'Comparing Quantities'),
+          container(width, context, 'Chapter-9', 'Rational Numbers'),
+          container(width, context, 'Chapter-10', 'Practical Geometry'),
+          container(width, context, 'Chapter-11', 'Perimeter and Area'),
+          container(width, context, 'Chapter-12', 'Algebraic Expression'),
+          container(width, context, 'Chapter-13', 'Exponents and Power'),
+          container(width, context, 'Chapter-14', 'Symmetry'),
+          container(width, context, 'Chapter-15', 'Visualising Solid Shape'),
         ],
       ),
     );
   }
 
-  Container container(width, BuildContext context, String number, String name) {
-    return Container(
-        height: 90,
-        child: Card(
-            shadowColor: Colors.cyan,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Row(
-                  children: [
-                    Text(
-                      number,
-                      style: TextStyle(fontSize: 16),
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Expanded(
-                        child: Text(
-                      name,
-                      style: TextStyle(fontSize: 16),
-                    )),
-                  ],
-                ),
-                Row(
+  InkWell container(width, BuildContext context, String number, String name) {
+    return InkWell(
+        child: Container(
+            height: 80,
+            child: Card(
+                shadowColor: Colors.cyan,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    online(width, context, HomePage()),
-                    SizedBox(
-                      width: 10,
+                    Row(
+                      children: [
+                        Text(
+                          number,
+                          style: TextStyle(fontSize: 16),
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Expanded(
+                            child: Text(
+                          name,
+                          style: TextStyle(fontSize: 16),
+                        )),
+                      ],
                     ),
-                    offline(width, context, HomePage())
                   ],
-                )
-              ],
-            )));
+                ))));
   }
 
-  Expanded offline(double width, BuildContext context, route) {
-    return Expanded(
-        child: InkWell(
-      onTap: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) => route));
-      },
-      child: Container(
-        alignment: Alignment.center,
-        height: 20,
-        color: Colors.purple,
-        child: Text("Offline"),
-      ),
-    ));
-  }
+  // Expanded offline(double width, BuildContext context, route) {
+  //   return Expanded(
+  //       child: InkWell(
+  //     onTap: () {
+  //       Navigator.push(context, MaterialPageRoute(builder: (context) => route));
+  //     },
+  //     child: Container(
+  //       alignment: Alignment.center,
+  //       height: 20,
+  //       color: Colors.purple,
+  //       child: Text("Offline"),
+  //     ),
+  //   ));
+  // }
 
-  Expanded online(double width, BuildContext context, route1) {
-    return Expanded(
-        child: InkWell(
-      onTap: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => route1));
-      },
-      child: Container(
-        alignment: Alignment.center,
-        height: 20,
-        color: Colors.orange,
-        child: Text("Online"),
-      ),
-    ));
-  }
+  // Expanded online(double width, BuildContext context, route1) {
+  //   return Expanded(
+  //       child: InkWell(
+  //     onTap: () {
+  //       Navigator.push(
+  //           context, MaterialPageRoute(builder: (context) => route1));
+  //     },
+  //     child: Container(
+  //       alignment: Alignment.center,
+  //       height: 20,
+  //       color: Colors.orange,
+  //       child: Text("Online"),
+  //     ),
+  //   ));
+  // }
 }

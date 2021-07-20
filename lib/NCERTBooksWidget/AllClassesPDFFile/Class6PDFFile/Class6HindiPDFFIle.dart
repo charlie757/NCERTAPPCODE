@@ -21,12 +21,24 @@ class _Class6HindiPDFFileState extends State<Class6HindiPDFFile> {
 
       body: ListView(
         children: [
-          container(width, context, 'Lession-1', 'name'),
-          container(width, context, 'Lession-2', 'name'),
-          container(width, context, 'Lession-3', 'name'),
-          container(width, context, 'Lession-4', 'name'),
-          container(width, context, 'Lession-5', 'name'),
-          container(width, context, 'Lession-6', 'name')
+          container(width, context, 'Introduction', ''),
+          container(width, context, 'Chapter-1', 'वह चिड़िया जो'),
+          container(width, context, 'Chapter-2', 'बचपन'),
+          container(width, context, 'Chapter-3', 'नादान दोस्त'),
+          container(width, context, 'Chapter-4', 'चाँद से थोड़ी सी गप्पें'),
+          container(width, context, 'Chapter-5', 'अक्षरों का महत्व'),
+          container(width, context, 'Chapter-6', 'पार नज़र के'),
+          container(width, context, 'Chapter-7', 'साथी हाथ बढ़ाना'),
+          container(width, context, 'Chapter-8', 'ऐसे – ऐसे'),
+          container(width, context, 'Chapter-9', 'टिकट एल्बम'),
+          container(width, context, 'Chapter-10', 'झांसी की रानी'),
+          container(width, context, 'Chapter-11', 'जो देखकर भी नहीं देखते'),
+          container(width, context, 'Chapter-12', 'संसार पुस्तक है'),
+          container(width, context, 'Chapter-13', 'मैं सबसे छोटी होऊं'),
+          container(width, context, 'Chapter-14', 'लोकगीत'),
+          container(width, context, 'Chapter-15', 'नौकर'),
+          container(width, context, 'Chapter-16', 'वन के मार्ग में'),
+          container(width, context, 'Chapter-17', 'साँस – साँस में बांस')
         ],
       ),
     );

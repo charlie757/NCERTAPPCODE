@@ -57,7 +57,7 @@ class _MathPart1PDFFileState extends State<MathPart1PDFFile> {
                     Expanded(
                         child: Text(
                       name,
-                      style: TextStyle(fontSize: 16),
+                      style: TextStyle(fontSize: 14),
                     )),
                   ],
                 ),
@@ -72,10 +72,10 @@ class _MathPart1PDFFileState extends State<MathPart1PDFFile> {
                       width: 10,
                     ),
                     offline(width, context),
-                    
                     SizedBox(
-                      width: 10,),
-                      firebase(width, context)
+                      width: 10,
+                    ),
+                    firebase(width, context)
                   ],
                 )
               ],
@@ -116,17 +116,16 @@ class _MathPart1PDFFileState extends State<MathPart1PDFFile> {
       ),
     ));
   }
+
   Expanded firebase(double width, BuildContext context) {
     return Expanded(
         child: InkWell(
       onTap: () async {
-         
-                    final url = 'Core-Java.pdf';
-                    final file = await PDFApi.loadFirebase(url);
+        final url = 'Core-Java.pdf';
+        final file = await PDFApi.loadFirebase(url);
 
-                    if (file == null) return;
-                    openPDF(context, file);
-                
+        if (file == null) return;
+        openPDF(context, file);
       },
       child: Container(
         alignment: Alignment.center,

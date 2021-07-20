@@ -14,19 +14,31 @@ class _Class7SocialPDFFileState extends State<Class7SocialPDFFile> {
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        title: Text("Science"),
+        title: Text("Social Science"),
       ),
 
       //Show the PDF File by this class and we can add more chatper from here.
 
       body: ListView(
         children: [
-          container(width, context, 'Lession-1', 'name'),
-          container(width, context, 'Lession-2', 'name'),
-          container(width, context, 'Lession-3', 'name'),
-          container(width, context, 'Lession-4', 'name'),
-          container(width, context, 'Lession-5', 'name'),
-          container(width, context, 'Lession-6', 'name')
+          Container(
+              color: Colors.cyan,
+              height: 50,
+              alignment: Alignment.center,
+              child: Text("Geography (Our Environment)")),
+          container(width, context, 'Introduction', ''),
+          container(width, context, 'Chapter-1', 'Environment'),
+          container(width, context, 'Chapter-2', 'Inside Our Earth'),
+          container(width, context, 'Chapter-3', 'Our Changing Earth'),
+          container(width, context, 'Chapter-4', 'Air'),
+          container(width, context, 'Chapter-5', 'Water'),
+          container(
+              width, context, 'Chapter-6', 'Natural Vegetation and Wildlife'),
+          container(width, context, 'Chapter-7',
+              'Human-Environment – Settlement, Transport and Communication'),
+          container(width, context, 'Chapter-8',
+              'Human-Environment Interactions – The Tropical and the Subtropical Region'),
+          container(width, context, 'Chapter-9', 'Life in the Deserts'),
         ],
       ),
     );

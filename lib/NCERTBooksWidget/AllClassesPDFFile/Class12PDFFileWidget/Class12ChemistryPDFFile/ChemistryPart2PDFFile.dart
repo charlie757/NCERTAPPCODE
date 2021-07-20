@@ -54,7 +54,7 @@ class _ChemistryPart2PDFFileState extends State<ChemistryPart2PDFFile> {
                     Expanded(
                         child: Text(
                       name,
-                      style: TextStyle(fontSize: 16),
+                      style: TextStyle(fontSize: 14),
                     )),
                   ],
                 ),
@@ -68,14 +68,14 @@ class _ChemistryPart2PDFFileState extends State<ChemistryPart2PDFFile> {
                     SizedBox(
                       width: 10,
                     ),
-                    offline(width, context, HomePage())
+                    download(width, context, HomePage())
                   ],
                 )
               ],
             )));
   }
 
-  Expanded offline(double width, BuildContext context, route) {
+  Expanded download(double width, BuildContext context, route) {
     return Expanded(
         child: InkWell(
       onTap: () {
@@ -85,7 +85,7 @@ class _ChemistryPart2PDFFileState extends State<ChemistryPart2PDFFile> {
         alignment: Alignment.center,
         height: 20,
         color: Colors.cyanAccent,
-        child: Text("Offline"),
+        child: Text("download"),
       ),
     ));
   }

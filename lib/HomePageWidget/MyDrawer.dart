@@ -135,7 +135,7 @@ class MyDrawer extends StatelessWidget {
                 ),
                 InkWell(
                     onTap: () {
-                      // AuthService().signOut();
+                      AuthService().signOut();
                     },
                     child: ListTile(
                       title: Text("LogOut"),

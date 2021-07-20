@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ncertapp/NCERTBooksWidget/AllClassesPDFFile/Class12PDFFileWidget/Class12EnglishPDFFile/EnglishPDFFile.dart';
+import 'package:ncertapp/NCERTBooksWidget/AllClassesPDFFile/Class12PDFFileWidget/Class12EnglishPDFFile/EnglishPDFFile1.dart';
+import 'package:ncertapp/NCERTBooksWidget/AllClassesPDFFile/Class12PDFFileWidget/Class12EnglishPDFFile/EnglishPDFFile2.dart';
 
 class Class12EnglishPart extends StatefulWidget {
   const Class12EnglishPart({Key key}) : super(key: key);
@@ -18,8 +20,12 @@ class _Class12EnglishPartState extends State<Class12EnglishPart> {
         gridDelegate:
             SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
         children: [
-          inkWell(width, context, 'English', 'assets/images/english1.jpg',
+          inkWell(width, context, 'Kaliedoscope', 'assets/images/kalie.jpg',
               EnglishPDFFile()),
+          inkWell(width, context, 'Flamingo', 'assets/images/flamingo.jpg',
+              EnglishPDFFile1()),
+          inkWell(width, context, 'Vistas', 'assets/images/Vistas.jpg',
+              EnglishPDFFile2()),
         ],
       ),
     );

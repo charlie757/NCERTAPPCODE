@@ -4,8 +4,7 @@ import 'package:ncertapp/NCERTBooksWidget/AllClassesPDFFile/Class3PDFFile/Class3
 import 'package:ncertapp/NCERTBooksWidget/AllClassesPDFFile/Class3PDFFile/Class3EnglishPDFFile.dart';
 import 'package:ncertapp/NCERTBooksWidget/AllClassesPDFFile/Class3PDFFile/Class3HindiPDFFIle.dart';
 import 'package:ncertapp/NCERTBooksWidget/AllClassesPDFFile/Class3PDFFile/Class3MathPDFFile.dart';
-import 'package:ncertapp/NCERTBooksWidget/AllClassesPDFFile/Class3PDFFile/Class3SciencePDFFile.dart';
-import 'package:ncertapp/NCERTBooksWidget/AllClassesPDFFile/Class3PDFFile/Class3SocialPDFFile.dart';
+import 'package:ncertapp/NCERTBooksWidget/AllClassesPDFFile/Class3PDFFile/Class3EVSPDFFile.dart';
 
 class Class3Books extends StatefulWidget {
   const Class3Books({Key key}) : super(key: key);
@@ -30,14 +29,12 @@ class _Class3BooksState extends State<Class3Books> {
               Class3MathPDFFile()),
           inkWell(width, context, 'Hindi', 'assets/images/hindi.jpg',
               Class3HindiPDFFile()),
-          inkWell(width, context, 'Science', 'assets/images/science.jpg',
-              Class3SciencePDFFile()),
+          inkWell(width, context, 'EVS', 'assets/images/science.jpg',
+              Class3EVSPDFFile()),
           inkWell(width, context, 'English', 'assets/images/english.png',
               Class3EnglishPDFFile()),
-          inkWell(width, context, 'Drawing', 'assets/images/draw.jpg',
-              Class3DrawingPDFFile()),
-          inkWell(width, context, 'Social Science', 'assets/images/world.jpg',
-              Class3SocialPDFFile()),
+          // inkWell(width, context, 'Drawing', 'assets/images/draw.jpg',
+          //     Class3DrawingPDFFile()),
         ],
       ),
     );

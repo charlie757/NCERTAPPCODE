@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:shimmer/shimmer.dart';
 
 import 'Authenication/Home_Page.dart';
 import 'Authenication/authservice.dart';
@@ -65,14 +66,18 @@ class SplashScreenState extends State<MyHomePage> {
               children: [
                 Image.asset(
                   'assets/images/book4.jpg',
+                  fit: BoxFit.cover,
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
-                Text(
-                  "WELCOME TO NCERT COURSE",
-                  style: TextStyle(fontSize: 18),
-                )
+                Shimmer.fromColors(
+                    child: Text(
+                      "WELCOME TO NCERT COURSE",
+                      style: TextStyle(fontSize: 18),
+                    ),
+                    baseColor: Colors.yellow,
+                    highlightColor: Colors.grey),
               ],
             )));
   }

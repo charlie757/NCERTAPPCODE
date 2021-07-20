@@ -21,12 +21,22 @@ class _Class6SanskritPDFFileState extends State<Class6SanskritPDFFile> {
 
       body: ListView(
         children: [
-          container(width, context, 'Chapter-1', 'name'),
-          container(width, context, 'Chapter-2', 'name'),
-          container(width, context, 'Chapter-3', 'name'),
-          container(width, context, 'Chapter-4', 'name'),
-          container(width, context, 'Chapter-5', 'name'),
-          container(width, context, 'Chapter-6', 'name')
+          container(width, context, 'Chapter-1', 'शब्दपरिचयः I'),
+          container(width, context, 'Chapter-2', 'शब्दपरिचयः II'),
+          container(width, context, 'Chapter-3', 'शब्दपरिचयः III'),
+          container(width, context, 'Chapter-4', 'विद्यालयः'),
+          container(width, context, 'Chapter-5', 'वृक्षाः'),
+          container(width, context, 'Chapter-6', 'समुद्रतटः'),
+          container(width, context, 'Chapter-7', 'बकस्य प्रतीकारः'),
+          container(width, context, 'Chapter-8', 'सूक्तिस्तबकः'),
+          container(width, context, 'Chapter-9', 'क्रीड़ास्पर्धा'),
+          container(width, context, 'Chapter-10', 'कृषिकाः कर्मवीराः'),
+          container(width, context, 'Chapter-11', 'पुष्पोत्सवः'),
+          container(width, context, 'Chapter-12', 'अध्याय:'),
+          container(
+              width, context, 'Chapter-13', 'विमानयानं रचयाम्दशमः त्वम् असि'),
+          container(width, context, 'Chapter-14', 'अहह अाः च'),
+          container(width, context, 'Chapter-15', 'मातुल चंद्र')
         ],
       ),
     );

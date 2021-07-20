@@ -21,12 +21,25 @@ class _Class9MathPDFFileState extends State<Class9MathPDFFile> {
 
       body: ListView(
         children: [
-          container(width, context, 'Chapter-1', 'name'),
-          container(width, context, 'Chapter-2', 'name'),
-          container(width, context, 'Chapter-3', 'name'),
-          container(width, context, 'Chapter-4', 'name'),
-          container(width, context, 'Chapter-5', 'name'),
-          container(width, context, 'Chapter-6', 'name')
+          container(width, context, 'Introduction', '   '),
+          container(width, context, 'Chapter-1', 'Number Systems'),
+          container(width, context, 'Chapter-2', 'Polynomials'),
+          container(width, context, 'Chapter-3', 'Coordinate Geometry'),
+          container(
+              width, context, 'Chapter-4', 'Linear Equations in Two Variables'),
+          container(
+              width, context, 'Chapter-5', 'Introduction to Euclid’s Geometry'),
+          container(width, context, 'Chapter-6', ' Lines and Angles'),
+          container(width, context, 'Chapter-7', 'Triangles'),
+          container(width, context, 'Chapter-8', 'Quadrilaterals'),
+          container(width, context, 'Chapter-9',
+              'Areas of Parallelograms and Triangles'),
+          container(width, context, 'Chapter-10', 'Circles'),
+          container(width, context, 'Chapter-11', 'Constructions'),
+          container(width, context, 'Chapter-12', 'Heron’s Formula'),
+          container(width, context, 'Chapter-13', 'Surface Areas and Volumes'),
+          container(width, context, 'Chapter-14', 'Statistics'),
+          container(width, context, 'Chapter-15', 'Probability'),
         ],
       ),
     );

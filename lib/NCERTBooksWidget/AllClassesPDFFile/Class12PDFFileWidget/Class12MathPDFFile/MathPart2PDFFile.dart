@@ -50,7 +50,7 @@ class _MathPart2PDFFileState extends State<MathPart2PDFFile> {
                     ),
                     Text(
                       name,
-                      style: TextStyle(fontSize: 16),
+                      style: TextStyle(fontSize: 14),
                     ),
                   ],
                 ),

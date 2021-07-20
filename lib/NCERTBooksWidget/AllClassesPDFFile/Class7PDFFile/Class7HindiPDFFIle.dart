@@ -21,12 +21,27 @@ class _Class7HindiPDFFileState extends State<Class7HindiPDFFile> {
 
       body: ListView(
         children: [
-          container(width, context, 'Lession-1', 'name'),
-          container(width, context, 'Lession-2', 'name'),
-          container(width, context, 'Lession-3', 'name'),
-          container(width, context, 'Lession-4', 'name'),
-          container(width, context, 'Lession-5', 'name'),
-          container(width, context, 'Lession-6', 'name')
+          container(
+              width, context, 'Chapter-1', 'हम पंछी उन्मुक्त गगन के (कविता)'),
+          container(width, context, 'Chapter-2', 'दादी माँ (कहानी)'),
+          container(width, context, 'Chapter-3', 'हिमालय की बेटियाँ (निबंध)'),
+          container(width, context, 'Chapter-4', 'कठपुतली (कविता)'),
+          container(width, context, 'Chapter-5', 'मिठाईवाला (कहानी)'),
+          container(width, context, 'Chapter-6', 'रक्त और हमारा शरीर (निबंध)'),
+          container(width, context, 'Chapter-7', 'पापा खो गए (नाटक)'),
+          container(width, context, 'Chapter-8', 'शाम – एक किसान (कविता)'),
+          container(width, context, 'Chapter-9', 'चिड़िया की बच्ची (कहानी)'),
+          container(width, context, 'Chapter-10', 'अपूर्व अनुभव (संस्मरण)'),
+          container(width, context, 'Chapter-11', 'रहीम के दोहे (कविता)'),
+          container(width, context, 'Chapter-12', 'कंचा (कहानी)'),
+          container(width, context, 'Chapter-13', 'एक तिनका (कविता)'),
+          container(
+              width, context, 'Chapter-14', 'खानपान की बदलती तसवीर (निबंध)'),
+          container(width, context, 'Chapter-15', 'नीलकंठ (रेखाचित्र)'),
+          container(width, context, 'Chapter-16', 'भोर और बरखा (कविता)'),
+          container(width, context, 'Chapter-16', 'वीर कुवँर सिंह (जीवनी)'),
+          container(width, context, 'Chapter-16',
+              ' संघर्ष के कारन मैं तुनकमिज़ाज हो गया: धनराज (साक्षात्कार)')
         ],
       ),
     );

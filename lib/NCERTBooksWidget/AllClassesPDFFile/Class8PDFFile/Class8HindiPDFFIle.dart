@@ -16,17 +16,29 @@ class _Class8HindiPDFFileState extends State<Class8HindiPDFFile> {
       appBar: AppBar(
         title: Text("Hindi"),
       ),
-
-      //Show the PDF File by this class and we can add more chatper from here.
-
       body: ListView(
         children: [
-          container(width, context, 'Lession-1', 'name'),
-          container(width, context, 'Lession-2', 'name'),
-          container(width, context, 'Lession-3', 'name'),
-          container(width, context, 'Lession-4', 'name'),
-          container(width, context, 'Lession-5', 'name'),
-          container(width, context, 'Lession-6', 'name')
+          container(width, context, 'Chapter-1', 'ध्वनि (कविता)'),
+          container(width, context, 'Chapter-2', 'लाख की चूड़ियाँ (कहानी)'),
+          container(width, context, 'Chapter-3', 'बस की यात्रा (व्यंग)'),
+          container(width, context, 'Chapter-4', 'दीवानों की हस्ती (कविता)'),
+          container(
+              width, context, 'Chapter-5', 'चिठ्ठियों की अनूठी दुनिया (निबंध)'),
+          container(width, context, 'Chapter-6', 'भगवान के डाकिए (कविता)'),
+          container(width, context, 'Chapter-7', 'क्या निराश हुआ जाए (निबंध)'),
+          container(
+              width, context, 'Chapter-8', 'यह सबसे कठिन समय। नहीं (कविता)'),
+          container(width, context, 'Chapter-9', 'कबीर की साखियॉं'),
+          container(width, context, 'Chapter-10', 'कामचोर (कहानी)'),
+          container(width, context, 'Chapter-11', 'जब सिनेमा ने बोलना सीखा'),
+          container(width, context, 'Chapter-12', 'सूरदास चरित (कविता)'),
+          container(width, context, 'Chapter-13', 'जहाँ पहिया है (रिपोर्ताज)'),
+          container(width, context, 'Chapter-14', 'अकबरी लोटा (कहानी)'),
+          container(width, context, 'Chapter-15', 'सूर के पद (कविता)'),
+          container(width, context, 'Chapter-16', 'पानी की कहानी (निबंध)'),
+          container(width, context, 'Chapter-17', 'बाज और साँप (कहानी)'),
+          container(width, context, 'Chapter-18', 'टोपी (कहानी)'),
+          container(width, context, 'Chapter-1', 'name'),
         ],
       ),
     );

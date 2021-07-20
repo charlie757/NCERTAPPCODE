@@ -30,8 +30,8 @@ class _Class2BooksState extends State<Class2Books> {
               Class2EnglishPDFFile()),
           inkWell(width, context, 'Hindi', 'assets/images/hindi.jpg',
               Class2HindiPDFFile()),
-          inkWell(width, context, 'Drawing', 'assets/images/draw.jpg',
-              Class2DrawingPDFFile()),
+          // inkWell(width, context, 'Drawing', 'assets/images/draw.jpg',
+          //     Class2DrawingPDFFile()),
         ],
       ),
     );

@@ -16,16 +16,25 @@ class _Class8SanskritPDFFileState extends State<Class8SanskritPDFFile> {
       appBar: AppBar(
         title: Text("Sanskrit"),
       ),
-
-      //Show the PDF File by this class and we can add more chatper from here.
-
       body: ListView(
         children: [
-          container(width, context, 'Chapter-1', 'name'),
-          container(width, context, 'Chapter-2', 'name'),
-          container(width, context, 'Chapter-3', 'name'),
-          container(width, context, 'Chapter-4', 'name'),
-          container(width, context, 'Chapter-5', 'name'),
+          container(width, context, 'Chapter-1', 'सुभाषितानि'),
+          container(
+              width, context, 'Chapter-2', 'बिलस्य वाणी न कदापि मे श्रुता'),
+          container(width, context, 'Chapter-3', 'डिजीभारतम'),
+          container(width, context, 'Chapter-4', 'सदैव पुरतो निधेहि चरणम'),
+          container(width, context, 'Chapter-5', 'कण्टकेनैव कण्टकम'),
+          container(width, context, 'Chapter-6', 'गृहं शून्यं सुतां विना'),
+          container(width, context, 'Chapter-7', 'भारतजनताहम'),
+          container(width, context, 'Chapter-8', 'संसारसागरस्य नायकाः'),
+          container(width, context, 'Chapter-9', 'सप्तभगिन्यः'),
+          container(width, context, 'Chapter-10', 'नीतिनवनीतं'),
+          container(width, context, 'Chapter-11', 'सावित्री बाई फुले'),
+          container(width, context, 'Chapter-12', 'कः रक्षति कः रक्षितः'),
+          container(
+              width, context, 'Chapter-13', 'क्षितौ राजते भारतस्वर्णभूमिः'),
+          container(width, context, 'Chapter-14', 'आर्यभटः'),
+          container(width, context, 'Chapter-15', 'प्रहेलिकाः'),
           container(width, context, 'Chapter-6', 'name')
         ],
       ),

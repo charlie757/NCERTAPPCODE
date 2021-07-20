@@ -21,12 +21,23 @@ class _Class6MathPDFFileState extends State<Class6MathPDFFile> {
 
       body: ListView(
         children: [
-          container(width, context, 'Chapter-1', 'name'),
-          container(width, context, 'Chapter-2', 'name'),
-          container(width, context, 'Chapter-3', 'name'),
-          container(width, context, 'Chapter-4', 'name'),
-          container(width, context, 'Chapter-5', 'name'),
-          container(width, context, 'Chapter-6', 'name')
+          container(width, context, 'Chapter-1', 'Knowing Our Numbers'),
+          container(width, context, 'Chapter-2', 'Whole Numbers'),
+          container(width, context, 'Chapter-3', 'Playing With Numbers'),
+          container(width, context, 'Chapter-4', 'Basic Geometrical Ideas'),
+          container(
+              width, context, 'Chapter-5', 'Understanding Elementary Shapes'),
+          container(width, context, 'Chapter-6', 'Integers'),
+          container(width, context, 'Chapter-7', 'Fractions'),
+          container(width, context, 'Chapter-8', 'Decimals'),
+          container(width, context, 'Chapter-9', 'Data Handling'),
+          container(width, context, 'Chapter-10', 'Mensuration'),
+          container(width, context, 'Chapter-11', 'Algebra'),
+          container(width, context, 'Chapter-12', 'Ratio and Proportion'),
+          container(width, context, 'Chapter-13', 'Symmetry'),
+          container(width, context, 'Chapter-14', 'Practical Geometry'),
+          container(width, context, 'Answers', ''),
+          container(width, context, 'Brain Teaser', ''),
         ],
       ),
     );

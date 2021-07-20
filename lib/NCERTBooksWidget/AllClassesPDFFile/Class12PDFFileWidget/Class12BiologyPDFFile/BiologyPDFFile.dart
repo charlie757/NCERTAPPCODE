@@ -19,12 +19,30 @@ class _BiologyPDFFileState extends State<BiologyPDFFile> {
       ),
       body: ListView(
         children: [
-          container(width, context, 'Lesson-1', ' name'),
-          container(width, context, 'Lesson-2', ' name'),
-          container(width, context, 'Lesson-3', ' name'),
-          container(width, context, 'Lesson-4', ' name'),
-          container(width, context, 'Lesson-5', ' name'),
-          container(width, context, 'Lesson-6', ' name')
+          container(width, context, 'Chapter-1', 'Reproduction in Organisms'),
+          container(width, context, 'Chapter-2',
+              'Sexual Reproduction in Flowering Plants'),
+          container(width, context, 'Chapter-3', 'Human Reproduction'),
+          container(width, context, 'Chapter-4', 'Reproductive Health'),
+          container(width, context, 'Chapter-5',
+              'Principles of Inheritance and Variation'),
+          container(
+              width, context, 'Chapter-6', 'Molecular Basis of Inheritance'),
+          container(width, context, 'Chapter-7', 'Evolution'),
+          container(width, context, 'Chapter-8', 'Human Health and Disease'),
+          container(width, context, 'Chapter-9',
+              'Strategies for Enhancement in Food Reproduction'),
+          container(width, context, 'Chapter-10',
+              'Microbes in Human Welfare Solutions'),
+          container(width, context, 'Chapter-11',
+              'Biotechnology: Principles and Processes'),
+          container(width, context, 'Chapter-12',
+              'Biotechnology and its Applications'),
+          container(width, context, 'Chapter-13', 'Organisms and Populations'),
+          container(width, context, 'Chapter-14', 'Ecosystems Solutions'),
+          container(
+              width, context, 'Chapter-15', 'Biodiversity and Conservation'),
+          container(width, context, 'Chapter-16', 'Environmental Issues')
         ],
       ),
     );
@@ -51,7 +69,7 @@ class _BiologyPDFFileState extends State<BiologyPDFFile> {
                     Expanded(
                         child: Text(
                       name,
-                      style: TextStyle(fontSize: 16),
+                      style: TextStyle(fontSize: 14),
                     )),
                   ],
                 ),
@@ -62,14 +80,14 @@ class _BiologyPDFFileState extends State<BiologyPDFFile> {
                     SizedBox(
                       width: 10,
                     ),
-                    offline(width, context, Chapter1())
+                    download(width, context, Chapter1())
                   ],
                 )
               ],
             )));
   }
 
-  Expanded offline(double width, BuildContext context, route) {
+  Expanded download(double width, BuildContext context, route) {
     return Expanded(
         child: InkWell(
       onTap: () {
@@ -79,7 +97,7 @@ class _BiologyPDFFileState extends State<BiologyPDFFile> {
         alignment: Alignment.center,
         height: 20,
         color: Colors.purple,
-        child: Text("Offline"),
+        child: Text("download"),
       ),
     ));
   }

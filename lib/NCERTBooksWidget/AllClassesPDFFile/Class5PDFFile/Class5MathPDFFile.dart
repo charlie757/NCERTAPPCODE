@@ -21,12 +21,23 @@ class _Class5MathPDFFileState extends State<Class5MathPDFFile> {
 
       body: ListView(
         children: [
-          container(width, context, 'Chapter-1', 'name'),
-          container(width, context, 'Chapter-2', 'name'),
-          container(width, context, 'Chapter-3', 'name'),
-          container(width, context, 'Chapter-4', 'name'),
-          container(width, context, 'Chapter-5', 'name'),
-          container(width, context, 'Chapter-6', 'name')
+          container(width, context, 'Introduction', ''),
+          container(width, context, 'Chapter-1', 'The fish Tale'),
+          container(width, context, 'Chapter-2', 'Shapes and Angles'),
+          container(width, context, 'Chapter-3', 'How Many Squares?'),
+          container(width, context, 'Chapter-4', 'Parts and Wholes'),
+          container(width, context, 'Chapter-5', 'Does it Look the Same?'),
+          container(width, context, 'Chapter-6',
+              'Be My Multiple, I’ll be Your Factor'),
+          container(width, context, 'Chapter-7', 'Can You See the Pattern?'),
+          container(width, context, 'Chapter-8', 'Mapping Your Way'),
+          container(width, context, 'Chapter-9', 'Boxes and Sketches'),
+          container(width, context, 'Chapter-10', 'Tenths and Hundredths'),
+          container(width, context, 'Chapter-11', 'Area and its Boundary'),
+          container(width, context, 'Chapter-12', 'Smart Charts'),
+          container(
+              width, context, 'Chapter-13', 'Ways to Multiply and Divide'),
+          container(width, context, 'Chapter-14', 'How Big? How Heavy?')
         ],
       ),
     );
